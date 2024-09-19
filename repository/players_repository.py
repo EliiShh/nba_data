@@ -34,12 +34,9 @@ def create_player(player: Player) -> str:
           player.team,
           player.season,
           player.player_id))
-    new_id = cursor.fetchone()['player_id']
     connection.commit()
     cursor.close()
     connection.close()
-    return new_id
-
 
 def find_all_players() -> List[Player]:
     connection = get_db_connection()

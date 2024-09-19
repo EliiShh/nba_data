@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0016e087-53b8-45a5-8cb6-e357063687b4" name="Changes" comment="Bringing players from API">
-      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/sql_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/DreamTeam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/players_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/player_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/laud_json.py" afterDir="false" />
+    <list default="true" id="0016e087-53b8-45a5-8cb6-e357063687b4" name="Changes" comment="Adding tables in the database and reading the data from JSON">
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/sql_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/players_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/players_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/player_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/player_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/laud_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/laud_json.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +41,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for sql_test.test_create_user.executor": "Run",
+    "Python.laud_json.executor": "Run",
+    "Python.player_service.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
@@ -73,6 +71,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for sql_test.test_create_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="NBA" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;sql_test.test_create_user&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for sql_test.test_create_user" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -114,12 +132,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1726735072410</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎-00004" summary="Adding tables in the database and reading the data from JSON">
+      <option name="closed" value="true" />
+      <created>1726740399490</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726740399490</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hello NBA" />
     <MESSAGE value="Bringing players from API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bringing players from API" />
+    <MESSAGE value="Adding tables in the database and reading the data from JSON" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding tables in the database and reading the data from JSON" />
   </component>
 </project>

@@ -10,27 +10,27 @@ def create_tables():
         with connection.cursor() as cursor:
             cursor.execute('''
             CREATE TABLE IF NOT EXISTS players (
-                player_name VARCHAR(255) NOT NULL,
-                position VARCHAR(255) NOT NULL,
-                games INT NOT NULL,
-                three_percent FLOAT NOT NULL,
-                two_percent FLOAT NOT NULL,
-                effective_fg_percent FLOAT NOT NULL,
-                assists INT NOT NULL,
-                turnovers INT NOT NULL,
-                points INT NOT NULL,
-                team VARCHAR(255) NOT NULL,
-                season INT NOT NULL,
-                player_id VARCHAR(255) NOT NULL
+                player_name VARCHAR(255),
+                position VARCHAR(255),
+                games INT,
+                three_percent FLOAT,
+                two_percent FLOAT,
+                effective_fg_percent FLOAT,
+                assists INT,
+                turnovers INT,
+                points INT,
+                team VARCHAR(255),
+                season INT,
+                player_id VARCHAR(255)
             );
             CREATE TABLE IF NOT EXISTS dream_teams (
                 id SERIAL PRIMARY KEY,
-                team_name VARCHAR(255) NOT NULL,
-                C VARCHAR(255) NOT NULL,
-                PF VARCHAR(255) NOT NULL,
-                SF VARCHAR(255) NOT NULL,
-                SG VARCHAR(255) NOT NULL,
-                P VARCHAR(255) NOT NULL
+                team_name VARCHAR(255),
+                C VARCHAR(255),
+                PF VARCHAR(255),
+                SF VARCHAR(255),
+                SG VARCHAR(255),
+                P VARCHAR(255)
             );
             ''')
             connection.commit()
