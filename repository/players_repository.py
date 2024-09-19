@@ -1,4 +1,3 @@
-from toolz.functoolz import return_none
 from models.Player import Player
 from repository.database import get_db_connection
 from typing import List
