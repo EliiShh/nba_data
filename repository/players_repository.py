@@ -4,7 +4,7 @@ from repository.database import get_db_connection
 from typing import List
 
 
-def create_player(player: Player) -> str:
+def create_player(player: Player):
     connection = get_db_connection()
     cursor = connection.cursor()
     cursor.execute("""
@@ -15,21 +15,20 @@ def create_player(player: Player) -> str:
                 three_percent,
                 two_percent,
                 effective_fg_percent,
-                assists,
-                turnovers,
+                atr,
                 points,
                 team,
                 season,
                 player_id
             )
-     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
+     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
     """, (player.player_name,
           player.position,
           player.games,
           player.three_percent,
           player.two_percent,
           player.effective_fg_percent,
-          player.assists, player.turnovers,
+          player.atr,
           player.points,
           player.team,
           player.season,
@@ -41,9 +40,12 @@ def create_player(player: Player) -> str:
 def find_all_players() -> List[Player]:
     connection = get_db_connection()
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM players")
-    res = cursor.fetchall()
-    users = [Player(**p) for p in res]
-    cursor.close()
-    connection.close()
-    return users
+    try:
+        cursor.execute("SELECT * FROM players")
+        res = cursor.fetchall()
+        players = [Player(**p) for p in res]
+        cursor.close()
+        connection.close()
+        return players
+    except:
+        return []

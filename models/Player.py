@@ -10,8 +10,7 @@ class Player:
    three_percent: float  # אחוזי הקליעה משלוש נקודות
    two_percent: float  # אחוזי הקליעה משתי נקודות
    effective_fg_percent: float  # אחוזי קליעה אפקטיביים (משקלל את הקליעות משלוש נקודות)
-   assists: int  # מספר האסיסטים (מסירות שהובילו לסל)
-   turnovers: int  # מספר האיבודים
+   atr: float
    points: int  # מספר הנקודות שהשחקן קלע
    team: str  # שם הקבוצה שבה השחקן משחק
    season: int  # העונה שבה נרשמו הסטטיסטיקות

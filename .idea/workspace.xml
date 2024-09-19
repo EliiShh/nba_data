@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0016e087-53b8-45a5-8cb6-e357063687b4" name="Changes" comment="Adding tables in the database and reading the data from JSON">
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sql_test.py" afterDir="false" />
+    <list default="true" id="0016e087-53b8-45a5-8cb6-e357063687b4" name="Changes" comment="Entering all the players into the database using the module and getting them all in the selection using the test">
+      <change afterPath="$PROJECT_DIR$/service/manipulation_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/DreamTeam.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/DreamTeam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/players_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/players_repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/player_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/player_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/laud_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/laud_json.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +42,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for sql_test.test_create_user.executor": "Run",
+    "Python.Player.executor": "Run",
     "Python.laud_json.executor": "Run",
     "Python.player_service.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\05555\PycharmProjects\NBA\service" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NBA" />
@@ -140,13 +146,22 @@
       <option name="project" value="LOCAL‎" />
       <updated>1726740399490</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎-00005" summary="Entering all the players into the database using the module and getting them all in the selection using the test">
+      <option name="closed" value="true" />
+      <created>1726747981368</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726747981368</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hello NBA" />
     <MESSAGE value="Bringing players from API" />
     <MESSAGE value="Adding tables in the database and reading the data from JSON" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding tables in the database and reading the data from JSON" />
+    <MESSAGE value="Entering all the players into the database using the module and getting them all in the selection using the test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Entering all the players into the database using the module and getting them all in the selection using the test" />
   </component>
 </project>
