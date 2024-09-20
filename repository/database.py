@@ -17,6 +17,7 @@ def create_tables():
                 two_percent FLOAT,
                 effective_fg_percent FLOAT,
                 atr FLOAT,
+                ppg FLOAT,
                 points INT,
                 team VARCHAR(255),
                 season INT,
@@ -29,7 +30,7 @@ def create_tables():
                 PF VARCHAR(255),
                 SF VARCHAR(255),
                 SG VARCHAR(255),
-                P VARCHAR(255)
+                PG VARCHAR(255)
             );
             ''')
             connection.commit()

@@ -14,6 +14,6 @@ def setup_database():
     cursor.close()
     connection.close()
 
-def test_create_user(setup_database):
+def test_create(setup_database):
 
     assert True

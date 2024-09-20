@@ -11,6 +11,7 @@ class Player:
    two_percent: float  # אחוזי הקליעה משתי נקודות
    effective_fg_percent: float  # אחוזי קליעה אפקטיביים (משקלל את הקליעות משלוש נקודות)
    atr: float
+   ppg: float
    points: int  # מספר הנקודות שהשחקן קלע
    team: str  # שם הקבוצה שבה השחקן משחק
    season: int  # העונה שבה נרשמו הסטטיסטיקות
