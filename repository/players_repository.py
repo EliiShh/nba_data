@@ -1,7 +1,6 @@
 from models.Player import Player
 from repository.database import get_db_connection
 from typing import List
-from toolz import *
 import statistics as s
 
 
@@ -113,7 +112,6 @@ def find_all_players_id():
     try:
         cursor.execute("SELECT DISTINCT player_id FROM players")
         res = cursor.fetchall()
-        # players = [Player(**p) for p in res]
         cursor.close()
         connection.close()
         return res

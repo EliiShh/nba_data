@@ -63,66 +63,41 @@ def team_with_player_details(_id):
         "PG": find_player(team.pg)
     }
 
+def all_statistic_team(team):
+    team_st = {
+        "id": team["id"],
+        "team_name": team["name"],
+        "games": 0,
+        "three_percent": [],
+        "two_percent": [],
+        "effective_fg_percent": [],
+        "atr": [],
+        "ppg": [],
+        "points": 0
+    }
+    for k, v in team.items():
+        if type(v) is Player:
+            team_st["games"] += v.games
+            team_st["three_percent"].append(v.three_percent)
+            team_st["two_percent"].append(v.two_percent)
+            team_st["effective_fg_percent"].append(v.effective_fg_percent)
+            team_st["atr"].append(v.atr)
+            team_st["ppg"].append(v.ppg)
+            team_st["points"] += v.points
+    team_st["three_percent"] = s.mean(team_st["three_percent"])
+    team_st["two_percent"] = s.mean(team_st["two_percent"])
+    team_st["effective_fg_percent"] = s.mean(team_st["effective_fg_percent"])
+    team_st["atr"] = s.mean(team_st["atr"])
+    team_st["ppg"] = s.mean(team_st["ppg"])
+    return team_st
+
 def comparison_between_teams(team1_id, team2_id):
-    list_teams = [team_with_player_details(int(list(team1_id)[1])), team_with_player_details(int(list(team2_id)[1]))]
-    t1 = {
-        "id": list_teams[0]["id"],
-        "team_name": list_teams[0]["name"],
-        "games": 0,
-        "three_percent": [],
-        "two_percent": [],
-        "effective_fg_percent": [],
-        "atr": [],
-        "ppg": [],
-        "points": 0
-    }
-    for k, v in list_teams[0].items():
-        if type(v) is Player:
-            t1["games"] += v.games
-            t1["three_percent"].append(v.three_percent)
-            t1["two_percent"].append(v.two_percent)
-            t1["effective_fg_percent"].append(v.effective_fg_percent)
-            t1["atr"].append(v.atr)
-            t1["ppg"].append(v.ppg)
-            t1["points"] += v.points
-    t1["three_percent"] = s.mean(t1["three_percent"])
-    t1["two_percent"] = s.mean(t1["two_percent"])
-    t1["effective_fg_percent"] = s.mean(t1["effective_fg_percent"])
-    t1["atr"] = s.mean(t1["atr"])
-    t1["ppg"] = s.mean(t1["ppg"])
-
-    t2 = {
-        "id": list_teams[1]["id"],
-        "team_name": list_teams[1]["name"],
-        "games": 0,
-        "three_percent": [],
-        "two_percent": [],
-        "effective_fg_percent": [],
-        "atr": [],
-        "ppg": [],
-        "points": 0
-    }
-    for k, v in list_teams[1].items():
-        if type(v) is Player:
-            t2["games"] += v.games
-            t2["three_percent"].append(v.three_percent)
-            t2["two_percent"].append(v.two_percent)
-            t2["effective_fg_percent"].append(v.effective_fg_percent)
-            t2["atr"].append(v.atr)
-            t2["ppg"].append(v.ppg)
-            t2["points"] += v.points
-    t2["three_percent"] = s.mean(t2["three_percent"])
-    t2["two_percent"] = s.mean(t2["two_percent"])
-    t2["effective_fg_percent"] = s.mean(t2["effective_fg_percent"])
-    t2["atr"] = s.mean(t2["atr"])
-    t2["ppg"] = s.mean(t2["ppg"])
-
+    list_teams = [team_with_player_details(int(team1_id)), team_with_player_details(int(team2_id))]
+    t1 = all_statistic_team(list_teams[0])
+    t2 = all_statistic_team(list_teams[1])
     if t1["ppg"] > t2["ppg"]:
         return {"the best": t1, "less good": t2}
     return {"the best": t2, "less good": t1}
-
-
-
 
 
 

@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0016e087-53b8-45a5-8cb6-e357063687b4" name="Changes" comment="Adding insert and select to Team Dream">
-      <change afterPath="$PROJECT_DIR$/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/players_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/team_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/team_service.py" afterDir="false" />
+    <list default="true" id="0016e087-53b8-45a5-8cb6-e357063687b4" name="Changes" comment="Adding a controllers">
+      <change afterPath="$PROJECT_DIR$/tests/team_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/DreamTeam.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/DreamTeam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/players_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/players_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/team_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/repository/team_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/manipulation_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/manipulation_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/player_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/player_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/players_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/players_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/team_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/team_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/team_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/team_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/sql_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sql_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/laud_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/laud_json.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +27,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EliiShh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EliiShh/nba_data.git&quot;,
+    &quot;accountId&quot;: &quot;d63c9fc0-4d54-4085-98e5-5ad3fc91af91&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2mHItyvgtsFiGKRbgOAA9Uq9iYb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -53,6 +55,8 @@
     "Python tests.Python tests for flask_test.test_search_user.executor": "Run",
     "Python tests.Python tests for sql_test.test_create.executor": "Run",
     "Python tests.Python tests for sql_test.test_create_user.executor": "Run",
+    "Python tests.Python tests for team_test.test_find_all.executor": "Run",
+    "Python tests.Python tests for team_test.test_find_dream_team.executor": "Run",
     "Python.DreamTeam.executor": "Run",
     "Python.Player.executor": "Run",
     "Python.database.executor": "Run",
@@ -62,10 +66,12 @@
     "Python.player_service.executor": "Run",
     "Python.players_controller.executor": "Run",
     "Python.players_repository.executor": "Run",
+    "Python.start.executor": "Run",
     "Python.team_repository.executor": "Run",
     "Python.team_service.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/05555/PycharmProjects/psql-fp-quotes"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -73,7 +79,7 @@
       <recent name="C:\Users\05555\PycharmProjects\NBA\service" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Python tests for team_test.test_find_dream_team">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NBA" />
       <option name="ENV_FILES" value="" />
@@ -141,8 +147,40 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for team_test.test_find_all" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="NBA" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;team_test.test_find_all&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for team_test.test_find_dream_team" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="NBA" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;team_test.test_find_dream_team&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for team_test.test_find_dream_team" />
+        <item itemvalue="Python tests.Python tests for team_test.test_find_all" />
         <item itemvalue="Python tests.Python tests for sql_test.test_create" />
         <item itemvalue="Python tests.Python tests for sql_test.test_create_user" />
         <item itemvalue="Python tests.Python tests for flask_test.test_search_user" />
@@ -221,7 +259,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1726754662537</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL‎-00008" summary="Adding a controllers">
+      <option name="closed" value="true" />
+      <created>1726814948482</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL‎-00008" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726814948482</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -231,6 +277,7 @@
     <MESSAGE value="Entering all the players into the database using the module and getting them all in the selection using the test" />
     <MESSAGE value="Implementing the ATR in SQL" />
     <MESSAGE value="Adding insert and select to Team Dream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding insert and select to Team Dream" />
+    <MESSAGE value="Adding a controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding a controllers" />
   </component>
 </project>

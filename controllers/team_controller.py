@@ -46,14 +46,12 @@ def get_team(team_id):
 def compare_teams():
     team1_id = request.args.get('team1')
     team2_id = request.args.get('team2')
-    print(type(team1_id))
-    print(type(team2_id))
+
 
     if team1_id is None or team2_id is None:
         return jsonify({"error": "plise gave to teams id"}), 400
     try:
         teams = comparison_between_teams(team1_id, team2_id)
-        print(teams)
         return jsonify(teams), 200
     except ValueError as e:
         return jsonify({'error': str(e)}), 400
