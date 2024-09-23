@@ -5,3 +5,6 @@
 # players = list_players_from_api_map_to_model(players_f_api)
 #
 # create_players_in_db(players)
+
+
+#psql -U postgres
