@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0016e087-53b8-45a5-8cb6-e357063687b4" name="Changes" comment="Adding a controllers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/start.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,41 +45,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for flask_test.test_search_user.executor": "Run",
-    "Python tests.Python tests for players_test.test_find_all_players.executor": "Run",
-    "Python tests.Python tests for players_test.test_find_dream_team.executor": "Run",
-    "Python tests.Python tests for players_test.test_find_dream_team_adn_season.executor": "Run",
-    "Python tests.Python tests for players_test.test_find_player.executor": "Run",
-    "Python tests.Python tests for sql_test.test_create.executor": "Run",
-    "Python tests.Python tests for sql_test.test_create_user.executor": "Run",
-    "Python tests.Python tests for team_test.test_create_team.executor": "Run",
-    "Python tests.Python tests for team_test.test_find_all.executor": "Run",
-    "Python tests.Python tests for team_test.test_find_dream_team.executor": "Run",
-    "Python.DreamTeam.executor": "Run",
-    "Python.Player.executor": "Run",
-    "Python.database.executor": "Run",
-    "Python.laud_json.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.manipulation_service.executor": "Run",
-    "Python.player_service.executor": "Run",
-    "Python.players_controller.executor": "Run",
-    "Python.players_repository.executor": "Run",
-    "Python.start.executor": "Run",
-    "Python.team_repository.executor": "Run",
-    "Python.team_service.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/05555/PycharmProjects/psql-fp-quotes"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for flask_test.test_search_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for players_test.test_find_all_players.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for players_test.test_find_dream_team.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for players_test.test_find_dream_team_adn_season.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for players_test.test_find_player.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for sql_test.test_create.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for sql_test.test_create_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for team_test.test_create_team.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for team_test.test_find_all.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for team_test.test_find_dream_team.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DreamTeam.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Player.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.laud_json.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.manipulation_service.executor&quot;: &quot;Run&quot;,
+    &quot;Python.player_service.executor&quot;: &quot;Run&quot;,
+    &quot;Python.players_controller.executor&quot;: &quot;Run&quot;,
+    &quot;Python.players_repository.executor&quot;: &quot;Run&quot;,
+    &quot;Python.start.executor&quot;: &quot;Run&quot;,
+    &quot;Python.team_repository.executor&quot;: &quot;Run&quot;,
+    &quot;Python.team_service.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/05555/PycharmProjects/psql-fp-quotes&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\05555\PycharmProjects\NBA\service" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for players_test.test_find_all_players">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NBA" />
       <option name="ENV_FILES" value="" />
@@ -276,7 +275,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1727006704537</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL‎-00010" summary="Adding a controllers">
+      <option name="closed" value="true" />
+      <created>1727078061008</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL‎-00010" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1727078061008</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
